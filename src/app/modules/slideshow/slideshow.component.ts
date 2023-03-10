@@ -63,9 +63,9 @@ export class SlideshowComponent implements OnInit, AfterViewInit, DoCheck, OnCha
   @Output() onImageLazyLoad = new EventEmitter<ISlide>();
   @Output() onClick = new EventEmitter<{ slide: ISlide, index: number }>();
 
-  @ViewChild('container') container: ElementRef;
-  @ViewChild('prevArrow') prevArrow: ElementRef;
-  @ViewChild('nextArrow') nextArrow: ElementRef;
+  @ViewChild('container', { static: true }) container: ElementRef;
+  @ViewChild('prevArrow', { static: true }) prevArrow: ElementRef;
+  @ViewChild('nextArrow', { static: true }) nextArrow: ElementRef;
 
   get safeStyleDotColor(): SafeStyle {
     return this.sanitizer.bypassSecurityTrustStyle(`--dot-color: ${ this.dotColor }`);
