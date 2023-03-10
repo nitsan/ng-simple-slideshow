@@ -12,6 +12,9 @@
     "curly": false,
     "eofline": true,
     "forin": false,
+    "deprecation": {
+      "severity": "warning"
+    },
     "import-blacklist": [
       true
     ],
@@ -57,7 +60,6 @@
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-unused-expression": false,
-    "no-use-before-declare": true,
     "no-var-keyword": false,
     "object-literal-sort-keys": false,
     "one-line": [
