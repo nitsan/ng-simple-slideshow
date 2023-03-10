@@ -126,7 +126,6 @@
       }
     }
   },
-  "defaultProject": "ng-simple-slideshow",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
